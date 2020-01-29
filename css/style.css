@@ -1,0 +1,258 @@
+:root{
+	--primary-color: #FFA400;
+	--secondary-color: #fff;
+	--light-color: #f3f3f3;
+	--dark-color: #333;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Francois+One&display=swap');
+
+body{
+	font-family: 'Francois One', sans-serif;
+	background: var(--light-color);
+}
+
+/*
+////////////////////////
+utilities
+///////////////////////
+*/
+.main-heading{
+	padding-top: 4rem;
+	font-size: 2rem;
+	letter-spacing: 2px;	
+}
+
+.py-2{ padding: 2rem 0 }
+
+/*
+////////////////////////
+navigation
+///////////////////////
+*/
+.navbar{
+	position: fixed;
+	background: var(--dark-color);
+	overflow: auto;
+}
+
+.navbar-light .navbar-brand {
+	color: var(--secondary-color);
+	font-size: 2rem;
+}
+
+.navbar-light .navbar-brand span{
+	font-size: 1rem;
+}
+
+.navbar-light a img{
+	color: var(--secondary-color);
+}
+
+.navbar-light .navbar-nav .nav-link{
+	color: var(--secondary-color);
+	font-size: 1rem;
+}
+
+#options{
+	list-style: none;
+}
+
+#options li a{
+	color: var(--light-color);
+	text-decoration: none;
+}
+
+
+li:hover {
+  cursor: pointer;
+}
+
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top:-30px;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+
+/*
+////////////////////////
+showcase
+///////////////////////
+*/
+
+#showcase img{
+	height: 79vh;
+}
+
+.underline{
+	position: relative;
+	bottom: 1rem;
+	border-top: 2px solid var(--primary-color);
+	width: 10%;
+	left: 44.6%;	
+}
+/*
+////////////////////////
+about
+///////////////////////
+*/
+
+.page-container{
+	display: grid;
+	grid-template-columns: 5fr 2fr;
+	margin: 2rem 0;
+	margin-top: 7rem;
+	grid-gap: 1.5rem;
+}
+
+.page-container > *:first-child{
+	grid-row: 1/ span 3;
+}
+
+.l-heading{
+	font-size: 3rem;	
+}
+
+.card1{
+	background: #fff;
+	padding: 2rem;
+}
+
+#articles{
+	display: grid;
+	padding: 3rem;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+#articles .card1{
+	background: var(--light-color);
+}
+
+.row{
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+.row .pro img{
+	height: 70vh;
+}
+
+.newarrival{
+	background: green;
+	width: 50px;
+	color: white;
+	font-size: 12px;
+	font-weight: bold; 
+}
+
+.col-md-7 h2{
+	color: #555; 
+}
+
+.price{
+	color: #FE980F;
+	font-size: 26px;
+	font-weight: bold;
+	padding-top: 20px; 
+}
+
+/*input{
+	border: 1px solid #ccc;
+	font-weight: bold;
+	height: 33px;
+	text-align: center;
+	width: 30%;
+}*/
+
+.cart{
+	background: #FE980F;
+	color: #FFFFFF;
+	font-size: 15px;
+	margin-left: 1rem;
+}
+
+/*
+////////////////////////
+footer
+///////////////////////
+*/
+#main-footer{
+	padding-top: 3rem;
+	background: var(--dark-color);
+	color: #fff;
+}
+
+#main-footer img{
+	width: 100px;
+}
+
+#main-footer a{
+	color: #fff;
+}
+
+#main-footer .footer-container{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 1.5rem;
+}
+
+#main-footer .footer-container > *:last-child{
+	background: #444;
+	grid-column: 1/span 4;
+	padding: .5rem;
+	text-align: center;
+	font-size: 0.75rem;
+}
+
+#main-footer .footer-container input[type='email']{
+	width: 90%;
+	padding: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+#main-footer .footer-container input[type='submit']{
+	width: 90%;
+}
+
+#main-footer .icon{
+	font-size: 4rem;
+}
+
+/*
+////////////////////////
+form
+///////////////////////
+*/
+
+#form{
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+#form .back{
+	padding: 5%;
+	background-color: var(--primary-color);
+}
+
+#form input{
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	padding: 4.5%;
+}
